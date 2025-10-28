@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div className="card bg-base-100 w-full mx-auto max-w-sm my-10 shrink-0 shadow-2xl">
       <div className="card-body">
-        <h1 className="lg:text-3xl font-bold">Plese Login</h1>
+        <h1 className="lg:text-3xl font-bold">Plese Login !</h1>
         <form>
           <fieldset className="fieldset">
             {/* email field */}
@@ -32,12 +32,12 @@ const Login = () => {
             </button>
           </fieldset>
           <p>
-            Already have an account ? Please{" "}
+            New to our website ? Please{" "}
             <Link
               className="text-blue-400 hover:text-blue-700 underline"
-              to="/login"
+              to="/register"
             >
-              Login
+              Register
             </Link>
           </p>
         </form>

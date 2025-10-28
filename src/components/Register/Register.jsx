@@ -2,12 +2,25 @@ import React from "react";
 import { Link } from "react-router";
 
 const Register = () => {
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    console.log(email, password);
+  };
   return (
     <div className="card bg-base-100 w-full mx-auto max-w-sm my-10 shrink-0 shadow-2xl">
       <div className="card-body">
         <h1 className="lg:text-3xl font-bold">Plese Register</h1>
-        <form>
+        <form onSubmit={handleRegister}>
           <fieldset className="fieldset">
+            <label className="label">Name</label>
+            <input
+              type="text"
+              name="name"
+              className="input"
+              placeholder="Enter your name"
+            />
             {/* email field */}
             <label className="label">Email</label>
             <input
