@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import Login from "../Login/Login";
+// import Login from "../Login/Login";
 import { AuthContext } from "../../contexts/AuthContext/AuthContext";
 
 const Home = () => {
@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div>
       <h2>I am Home</h2>
-      <Login>
+      {/* <Login>
         <button>Click me</button>
-      </Login>
+      </Login> */}
     </div>
   );
 };

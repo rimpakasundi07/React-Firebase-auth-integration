@@ -4,8 +4,7 @@ import "./Navbar.css";
 import { AuthContext } from "../../contexts/AuthContext/AuthContext";
 
 const Navbar = () => {
-  const authInfo = use(AuthContext);
-  console.log("navbar", authInfo);
+  const { user } = use(AuthContext);
   const links = (
     <>
       <li>
